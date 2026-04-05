@@ -36,7 +36,7 @@ An AI-powered decision engine that analyzes student's academic strengths, intere
 (https://edupathlinkai.netlify.app/)
 
 ### 📹 Demo Video
-**Soon**
+---**Soon**
 
 ### 🛠️ How to Run Locally
 1. Download all 3 files
@@ -44,7 +44,7 @@ An AI-powered decision engine that analyzes student's academic strengths, intere
 3. No installation needed!
 
 ### 👥 Team
-[Your Name] - Solo Participant
+Manya Jain - Solo Participant
 
 ### 🌟 Future Enhancements
 - Integration with government scholarship APIs
