@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPath AI - Smart Career Guidance for Every Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 EduPath AI</h1>
+            <p class="tagline">Intelligent Career Path Predictor for Under-resourced Students</p>
+            <p class="impact-badge">🌍 Supporting UN SDG 4: Quality Education</p>
+        </header>
+
+        <div class="problem-statement">
+            <h2>⚠️ The Problem</h2>
+            <p>In rural and underprivileged communities, <strong>500+ million students</strong> lack access to career guidance. Most rely on outdated advice or family pressure, leading to <strong>70% career dissatisfaction</strong> and lost potential.</p>
+        </div>
+
+        <div class="solution">
+            <h2>💡 Our Solution</h2>
+            <p>An AI-powered decision system that analyzes a student's <strong>academic strengths, interests, resources, and local job market</strong> to suggest personalized, actionable career paths — accessible from any smartphone.</p>
+        </div>
+
+        <div class="form-card">
+            <h2>📝 Tell us about yourself</h2>
+            <form id="careerForm">
+                <div class="form-group">
+                    <label>📚 Favorite Subject (Strongest)</label>
+                    <select id="subject" required>
+                        <option value="">Select...</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="computers">Computer/Technology</option>
+                        <option value="commerce">Commerce/Business</option>
+                        <option value="arts">Arts/Creative</option>
+                        <option value="biology">Biology/Healthcare</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>🎯 What excites you most?</label>
+                    <select id="interest" required>
+                        <option value="">Select...</option>
+                        <option value="problems">Solving complex problems</option>
+                        <option value="helping">Helping people directly</option>
+                        <option value="creating">Creating things (art, code, design)</option>
+                        <option value="analyzing">Analyzing data/research</option>
+                        <option value="leading">Leading teams/business</option>
+                        <option value="nature">Working outdoors/environment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>💻 Technology access?</label>
+                    <select id="techAccess" required>
+                        <option value="">Select...</option>
+                        <option value="high">Regular computer + internet</option>
+                        <option value="medium">Smartphone only</option>
+                        <option value="low">Limited/shared device</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>🎓 Highest education completed</label>
+                    <select id="education" required>
+                        <option value="">Select...</option>
+                        <option value="10th">10th grade or below</option>
+                        <option value="12th">12th grade</option>
+                        <option value="graduate">Some college</option>
+                        <option value="degree">Bachelor's degree</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>💪 What's your biggest strength?</label>
+                    <select id="strength" required>
+                        <option value="">Select...</option>
+                        <option value="logic">Logical thinking</option>
+                        <option value="creative">Creativity</option>
+                        <option value="communication">Communication</option>
+                        <option value="organization">Organization</option>
+                        <option value="empathy">Empathy/Understanding</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>🏠 Local job market preference?</label>
+                    <select id="jobMarket" required>
+                        <option value="">Select...</option>
+                        <option value="local">Work locally (in my region)</option>
+                        <option value="remote">Remote/online work</option>
+                        <option value="city">Move to big city</option>
+                        <option value="any">Open to anything</option>
+                    </select>
+                </div>
+
+                <button type="submit">🔮 Predict My Career Path →</button>
+            </form>
+        </div>
+
+        <div id="result" class="result-card" style="display:none;">
+            <h2>✨ Your Personalized Career Path</h2>
+            <div id="resultContent"></div>
+            <button onclick="exportReport()" class="export-btn">📄 Export Report (PDF)</button>
+            <button onclick="resetForm()" class="reset-btn">🔄 Start Over</button>
+        </div>
+
+        <div class="impact-section">
+            <h3>📊 Real-World Impact</h3>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">500M+</div>
+                    <div class="stat-label">Students without guidance</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Higher confidence with AI guidance</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">₹0</div>
+                    <div class="stat-label">Free for all students</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>🏆 Frostbyte Hackathon 2026 | AI-Driven Decision System | Social Impact Project</p>
+            <p>📧 Contact: edupath.ai@example.com | 🌐 GitHub: /edupath-ai</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

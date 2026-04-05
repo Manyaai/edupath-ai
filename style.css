@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    opacity: 0.95;
+}
+
+.impact-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.problem-statement, .solution {
+    padding: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.problem-statement {
+    background: #fff3e0;
+}
+
+.solution {
+    background: #e8f5e9;
+}
+
+.problem-statement h2, .solution h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.problem-statement p, .solution p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.form-card {
+    padding: 30px;
+    background: #f9f9f9;
+}
+
+.form-card h2 {
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.result-card {
+    padding: 30px;
+    background: #f0f9ff;
+    border-top: 3px solid #667eea;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.result-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#resultContent {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.career-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.job-suggestion {
+    border-left: 4px solid #667eea;
+    padding: 15px;
+    margin: 15px 0;
+    background: #f9f9f9;
+}
+
+.export-btn {
+    background: #28a745;
+    margin-bottom: 10px;
+}
+
+.reset-btn {
+    background: #6c757d;
+}
+
+.impact-section {
+    padding: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.stat-label {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .container {
+        margin: 10px;
+    }
+}
