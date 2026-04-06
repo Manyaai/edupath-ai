@@ -26,11 +26,6 @@ An AI-powered decision engine that analyzes student's academic strengths, intere
 - **Free** for all students (no premium features)
 - **Offline-first** design for low-connectivity areas
 
-### 🎯 Improvements Over Previous Work
-- Added scholarship information (not just career names)
-- Implemented education-level adaptive recommendations
-- Created export functionality for offline sharing
-- Local job market consideration
 
 ### 🔗 Live Demo
 (https://edupathlinkai.netlify.app/)
